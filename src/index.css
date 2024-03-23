@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Sen:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    color: #333;
+    background-color: green;
+}
+
+a{text-decoration: none;color:inherit}
+
+
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100svh;
+}
+
+ul{list-style: none;}
+
+
+
+
+/* header */
+h1{
+    padding:10px 20px;
+    color: #fff;
+}
+
+/* main */
+
+main{
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.change_language, .counter{
+    display: flex;
+    justify-content: center; /* Center the contents horizontally */
+    margin:  0 0 20px;
+    gap: 20px;
+}
+
+button {
+    border: 1px solid #333;
+    padding: 10px 20px; /* Increase padding for bigger buttons */
+    background: white; 
+    border-radius: 10px; /* Add rounded corners */
+}
+button:hover {
+    color: #fff; 
+    background: #333; 
+}
+
+ul.pokedex {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Adjusted for 3 columns per row */
+    gap: 15px;
+    list-style: none;
+    align-content: center;
+    text-align: center;
+}
+
+ul.pokedex > li{
+    text-align: center;
+    border:1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #ddd;
+}
+
+ul.pokedex li img{
+    width: 150px;
+    height: 150px;
+    border:1px solid #ddd;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+ul.pkmnTypes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+ul.pkmnTypes li {
+    background: #333;
+    color:#fff;
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+
+main ul.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
